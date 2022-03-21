@@ -1,0 +1,12 @@
+[Unit]
+Desription=RFCOMM aut-bind 1
+After=bluetooth.target
+
+[Service]
+ExecStart=/home/pi/workspace/bt_bind/bt_bind.sh %i 1
+Restart=always
+RestartSec=15
+
+[Install]
+WantedBy=multi-user.target
+
