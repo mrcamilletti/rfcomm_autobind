@@ -3,7 +3,7 @@ Desription=RFCOMM aut-bind 0
 After=bluetooth.target
 
 [Service]
-ExecStart=/home/pi/workspace/rfcomm_autobind/bt_bind.sh %i 0
+ExecStart=/home/pi/rfcomm_autobind/bt_bind.sh %i 0
 Restart=always
 RestartSec=15
 
